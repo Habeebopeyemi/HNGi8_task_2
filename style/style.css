@@ -1,0 +1,140 @@
+:root{
+  --bodyBackground: rgb(2,0,36);
+  --bodyBackgroundGradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  --headerBackground: hsla(124, 100%, 100%, 0.88);
+  --formBackground: gray;
+  --inputBackground: hsla(0, 0%, 96%, 0.94);
+  --fontSize: 1rem;
+  --primary-padding: 1rem;
+  --primary-padding: 1rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+}
+body{
+  background: var(--bodyBackgroundGradient);
+  background-repeat: no-repeat;
+  font-size: var(--fontSize);
+  font-family: sans-serif;
+}
+.container{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.header{
+  width: 100%;
+  background-color: var(--bodyBackground);
+  margin: 0 0 3rem 0;
+}
+.navbar{
+  width: 100%;
+}
+ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+ul > li{
+  width: 200px;
+  max-width: 140px;
+  padding: var(--primary-padding);
+}
+img{
+  width: 100%;
+  border-radius: 4rem;
+  background-color: white;
+}
+.form-section{
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.form{
+  width: 100%;
+  max-width: 600px;
+  background: var(--formBackground);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+.form--header{
+  width: 100%;
+  font-size: var(--fontSize);
+  text-align: center;
+  margin: 1rem 0;
+  background-color: var(--headerBackground);
+  color: var(--formBackground);
+}
+.form--h1{
+  padding: var(--primary-padding);
+}
+.form--input--container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.form--input--control{
+  width: 90%;
+  margin: 1rem 0;
+  background-color: var(--headerBackground);
+  display: flex;
+  padding: var(--primary-padding);
+}
+.form--label{
+  flex: 0 1 30%;
+  font-weight: bold;
+}
+.form--input{
+  flex: 0 1 60%;
+  border: 1px solid gray;
+  padding: .5rem;
+}
+.checkbox, .textArea{
+  flex-direction: column;
+}
+#skill-set{
+  margin: 0 10px 0 0;
+}
+.checkbox--label{
+  padding: var(--primary-padding) 0;
+}
+.form--text{
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+textarea{
+  height: 10vh;
+}
+.button{
+  background-color: transparent;
+}
+.submit--btn{
+  width: 60%;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  background-color: orange;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.submit--btn:hover{
+  background-color: white;
+  transition: 1s;
+}
+footer{
+  width: 60%;
+  margin: 4rem 0;
+  color: white;
+}
+.footer--element{
+  height: 10vh;
+}
